@@ -1,0 +1,2 @@
+name  =  "shaikh samit mohammed shehzad faisal"
+class =  "vocab"
