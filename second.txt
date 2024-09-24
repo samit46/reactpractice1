@@ -3,4 +3,4 @@ git remote add origin https://github.com/samit46/reactpractice1
 git add .
 git commit -m "intial commit"
 git push -u origin master
-hello
+hello  
