@@ -1,3 +1,2 @@
 name  =  "shaikh samit mohammed shehzad faisal"
 class =  "vocab"
-G.O.A.T = "LIONEL MESSI IS THE GREATES PLAYER OF ALL TIME"
