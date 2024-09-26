@@ -1,12 +1,12 @@
 import React from "react";
 
-const Profile = () => {
+const Profile = ({pic,name,us}) => {
     return(
         
-      <div className="profile">
-        <p className="name">samit</p>
-        <img className="image"src="https://www.shutterstock.com/image-illustration/small-yellow-compact-car-260nw-394558741.jpg" alt=""></img>
-        <p className="about">I AM A DEVELOPER</p>
+      <div className='profile'>
+        <p className='name'>{name}</p>
+        <img className='profile-image'src={pic} alt={pic}></img>
+        <p className='about'>{us}</p>
       </div>
     )
 }
