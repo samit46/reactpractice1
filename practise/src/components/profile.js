@@ -1,8 +1,13 @@
 import React from "react";
 
-const profile = () => {
+const Profile = () => {
     return(
-        <h1>profile</h1>
+        
+      <div className="profile">
+        <p className="name">samit</p>
+        <img className="image"src="https://www.shutterstock.com/image-illustration/small-yellow-compact-car-260nw-394558741.jpg" alt=""></img>
+        <p className="about">I AM A DEVELOPER</p>
+      </div>
     )
 }
-export default profile;
+export default Profile;
