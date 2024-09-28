@@ -4,19 +4,19 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
 
-const Profile = ({pic,name,us,url}) => {
+const Profile = ({profile}) => {
   
     return(
    
        
-       <Card className='mb-5' style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={pic}/>
+       <Card className='col-md-4- m-2' style={{ width: '18rem'}}>
+      <Card.Img variant="top" src={profile.img}/>
       <Card.Body>
-        <Card.Title>{name}</Card.Title>
+        <Card.Title>{profile.name}</Card.Title>
         <Card.Text>
-          {us}
+          {profile.about}
         </Card.Text>
-        <Card.Link href={url} target="-blank">   <Button variant="primary">visit  {name}'s profile</Button></Card.Link>
+        <Card.Link href={profile.url} target="-blank">   <Button variant="primary">visit  {profile.name}'s profile</Button></Card.Link>
       </Card.Body>
     </Card>
       
