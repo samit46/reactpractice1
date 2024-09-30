@@ -16,7 +16,7 @@ const Profile = ({pic,name,us,url}) => {
         <Card.Text>
           {us}
         </Card.Text>
-        <Card.Link href={url} target="blank">   <Button variant="primary">visit profile</Button></Card.Link>
+        <Card.Link href={url} target="-blank">   <Button variant="primary">visit  {name}'s profile</Button></Card.Link>
       </Card.Body>
     </Card>
       
