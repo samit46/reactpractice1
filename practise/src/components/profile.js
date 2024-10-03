@@ -3,10 +3,11 @@ import Button from 'react-bootstrap/Button';
 
 import Card from 'react-bootstrap/Card';
 
+;
 
 const Profile = ({profile}) => {
   
-    return(
+  return(
    
        
        <Card className='col-md-4- m-2' style={{ width: '18rem'}}>
