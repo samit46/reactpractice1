@@ -1,31 +1,31 @@
 import "./App.css";
-import Calculator from "./components/calculator";
-import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
 import React, { useState, useEffect } from "react";
-import { Alert } from "bootstrap";
-import Hello from "./components/hello";
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import Hello from "./components/hello.js";
 
 function App() {
   return(
     <Navbar expand="lg" className="bg-body-tertiary">
-    <Container>
+    {/* <Container>
       <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
-          <Nav.Link href="./components/hello">Calculator</Nav.Link>
-          <Nav.Link href="#link">Link</Nav.Link>
-          
+          <Nav.Link  href ="components/hello.js"><Hello/></Nav.Link>
+          <Nav.Link href="/">profile</Nav.Link>
         </Nav>
       </Navbar.Collapse>
-    </Container>
+    </Container> */}
+    <Hello/>
   </Navbar>
   )
 }
+
+
+export default App;
 
 
   /* <div className='container mt-5'> */
@@ -117,4 +117,4 @@ function App() {
 //   .then(data => setProfiles(data))
 //   .catch(error =>console.error('error fetching the profile',error));
 // },[]);
-export default App;
+

@@ -29,15 +29,24 @@ function Hello() {
       const newhis = data.number1 + "+" + data.number2 + "=" + Result;
       sethistory((previoushis) => [newhis, ...previoushis]);
     } else if (action == "sub") {
+      const Result = data.number1 - data.number2;
+        setData({ ...data, result: Result });
+        const newhis = data.number1 + "-" + data.number2 + "=" + Result;
+        sethistory((previoushis) => [newhis, ...previoushis]);
       if (data.number1 >= data.number2) {
-        setData({ ...data, result: data.number1 - data.number2 });
       } else {
         alert(" number1  should be greater than number 2");
       }
     } else if (action == "mul") {
-      setData({ ...data, result: data.number1 * data.number2 });
+      const Result = data.number1 * data.number2;
+      setData({ ...data, result: Result });
+      const newhis = data.number1 + "*" + data.number2 + "=" + Result;
+      sethistory((previoushis) => [newhis, ...previoushis]);
     } else if (action == "div") {
-      setData({ ...data, result: data.number1 / data.number2 });
+      const Result = data.number1 / data.number2;
+      setData({ ...data, result: Result });
+      const newhis = data.number1 + "/" + data.number2 + "=" + Result;
+      sethistory((previoushis) => [newhis, ...previoushis]);
     } else {
       setData(intialData);
     }
@@ -116,4 +125,4 @@ function Hello() {
   );
 }
 
-export default Hello
+export default Hello;
